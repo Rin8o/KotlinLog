@@ -7,12 +7,12 @@ open class Human: Animal, Thinkable{
 
     // 引数付きコンストラクタ
     constructor(name: String, age: Int): super(name, age) {
-        this.name = "ノザカ"
-        this.age = 34
+        this.name = name
+        this.age = age
     }
 
-    constructor(name: String): super(name,0) {
-        this.hobby = "Android"
+    constructor(hobby: String): super(hobby,0) {
+        this.hobby = hobby
     }
 
     // Animalクラスのメソッドをオーバーライド
@@ -22,7 +22,7 @@ open class Human: Animal, Thinkable{
 
     // Thinkableインタフェースのメソッドをオーバーライド
     override fun think() {
+        //Log.d("kotlintest", "私は" + hobby + "について考える。")
         Log.d("kotlintest", "私は" + this.hobby + "について考える。")
-        // Log.d("kotlintest", "私は" + this.hobby + "について考える。")
     }
 }
