@@ -10,14 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var human1 = Human("ノザカ",33)
+        var human1 = Human("ノザカ",33,"Android")
         human1.say()    // sayメソッドの呼び出し
-        human1 = Human("Android")
         human1.think()  // thinkメソッドの呼び出し
 
-        var human2 = Human("スズキ",30)
+        var human2 = Human("スズキ",30, "iOS")
         human2.say()    // sayメソッドの呼び出し
-        human2 = Human("iOS")
         human2.think()  // thinkメソッドの呼び出し
     }
 }

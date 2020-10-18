@@ -6,12 +6,9 @@ open class Human: Animal, Thinkable{
     var hobby = ""
 
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int): super(name, age) {
+    constructor(name: String, age: Int, hobby: String): super(name, age) {
         this.name = name
         this.age = age
-    }
-
-    constructor(hobby: String): super(hobby,0) {
         this.hobby = hobby
     }
 
